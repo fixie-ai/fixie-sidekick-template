@@ -6,14 +6,14 @@ import { FixieCorpus } from 'ai-jsx/batteries/docs'
 import { Sidekick } from 'ai-jsx/sidekick';
 import _ from 'lodash';
 
-const FIXIE_CORPUS_ID = "<your_Fixie_corpus_ID>";
+const FIXIE_CORPUS_ID = "< TODO your_Fixie_corpus_ID>";
 const fullCorpus = new FixieCorpus(FIXIE_CORPUS_ID);
 const systemMessage = <YourSidekickSystemMessage />
 
 const tools: Record<string, Tool> = {
-  lookUpYourKnowledgeBase: {
+  lookUpTODOKnowledgeBase: {                      // Name this function something like 'lookUpAcmeCompanyKnowledgeBase".
     description:
-      'Your KB/corpus description...',
+      'TODO Your KB/corpus description...',
     parameters: {
       query: {
         description:
@@ -55,7 +55,7 @@ ${result.chunk.content.replaceAll('```', '\\`\\`\\`')}
 export default function SidekickTemplate() {
   return (
     <Sidekick
-      role="your sidekick role."
+      role="TODO your sidekick role."
       systemMessage={systemMessage}
       tools={tools}
       finalSystemMessageBeforeResponse={finalSystemMessageBeforeResponse}
