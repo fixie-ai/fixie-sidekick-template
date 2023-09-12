@@ -1,5 +1,5 @@
 {
-  "name": "<TODO: your-sidekick-name>",     // Change this to something like "sidekick-acme"
+  "name": "fixie-sidekick-template",
   "version": "0.1.0",
   "devDependencies": {
     "@fixieai/sdk": "*",
@@ -10,13 +10,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "yarn build && fixie-serve-bin --packagePath ./dist/index.js --port 8080",  // for npm change 'yarn' to 'npm run'
+    "dev": "npm run build && fixie-serve-bin --packagePath ./dist/index.js --port 8080",
     "typecheck": "tsc -p tsconfig.json",
-    "build": "yarn run typecheck",  // for npm change 'yarn' to 'npm'
-    "prepack": "yarn build"         // for npm change 'yarn' to 'npm run'
+    "build": "npm run typecheck",
+    "prepack": "npm run build",
+    "serve": "fixie serve",
+    "deploy": "fixie deploy"
   },
   "dependencies": {
-    "@fixieai/fixie": "^1.0.13",
+    "@fixieai/fixie": "^1.0.16",
     "ai-jsx": "0.15.0"
   },
   "files": [
