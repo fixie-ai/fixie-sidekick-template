@@ -12,6 +12,10 @@ import _ from "lodash";
 //TODO: Replace with your Fixie Corpus ID
 const FIXIE_CORPUS_ID = "";
 
+if (!FIXIE_CORPUS_ID) {
+  throw new Error("Please set a FIXIE_CORPUS_ID in src/index.tsx");
+}
+
 const fullCorpus = new FixieCorpus(FIXIE_CORPUS_ID);
 const systemMessage = <YourSidekickSystemMessage />;
 
