@@ -77,8 +77,6 @@ export default function SidekickTemplate() {
       role="A helpful assistant"
       systemMessage={systemMessage}
       tools={tools}
-      enableRecommendedQueries={true}
-      enableGenerativeUI={true}
       finalSystemMessageBeforeResponse={finalSystemMessageBeforeResponse}
     />
   );
