@@ -13,10 +13,12 @@
     "dev": "npm run build && fixie-serve-bin --packagePath ./dist/index.js --port 8080",
     "typecheck": "tsc -p tsconfig.json",
     "build": "npm run typecheck",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "serve": "fixie serve",
+    "deploy": "fixie deploy"
   },
   "dependencies": {
-    "@fixieai/fixie": "^1.0.15",
+    "@fixieai/fixie": "^1.0.16",
     "ai-jsx": "0.15.0"
   },
   "files": [
