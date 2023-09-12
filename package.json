@@ -1,5 +1,5 @@
 {
-  "name": "<sidekick_name>",
+  "name": "fixie-sidekick-template",
   "version": "0.1.0",
   "devDependencies": {
     "@fixieai/sdk": "*",

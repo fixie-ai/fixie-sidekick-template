@@ -20,7 +20,7 @@ const fullCorpus = new FixieCorpus(FIXIE_CORPUS_ID);
 const systemMessage = <YourSidekickSystemMessage />;
 
 const tools: Record<string, Tool> = {
-  // TIP: To help the model understand when to call this tool, name the function
+  // TODO: To help the model understand when to call this tool, name the function
   // something more descriptive like 'lookUpAcmeCompanyKnowledgeBase'.
   // For more tips on using Tools, see: https://docs.ai-jsx.com/tutorial/part7-tools
   lookUpKnowledgeBase: {
@@ -77,7 +77,7 @@ const tools: Record<string, Tool> = {
 export default function SidekickTemplate() {
   return (
     <Sidekick
-      // TIP: Give the Sidekick a descriptive role like "A helpful assistant for Acme Company".
+      // TODO: Give the Sidekick a descriptive role like "A helpful assistant for Acme Company".
       role="A helpful assistant"
       systemMessage={systemMessage}
       tools={tools}
