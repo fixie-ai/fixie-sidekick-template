@@ -1,5 +1,3 @@
 handle: <your-sidekick-handle>
-description: <your sidekick description>
-more_info_url: ''
 entry_point: .
 public: true
