@@ -7,7 +7,12 @@ import { FixieCorpus } from "ai-jsx/batteries/docs";
 import { Sidekick } from "ai-jsx/sidekick";
 
 //TODO: Replace with your Fixie Corpus ID
-const FIXIE_CORPUS_ID: string = undefined;
+// This Corpus contains information about foxes. Some suggested queries to try once
+// you deploy this sidekick are:
+//    tell me about foxes and what they eat
+//    what is the fennec fox like? how big do they get?
+//    who is foxie?
+const FIXIE_CORPUS_ID: string = "44094d5a-f817-4c2e-a2a4-8f8a0c936d0f";
 
 if (!FIXIE_CORPUS_ID) {
   throw new Error("Please set a FIXIE_CORPUS_ID in src/index.tsx");
@@ -46,7 +51,7 @@ export default function SidekickTemplate() {
   return (
     <Sidekick
       // TODO: Give the Sidekick a descriptive role like "A helpful assistant for Acme Company".
-      role="A helpful assistant"
+      role="A helpful assistant who is an expert on foxes."
       systemMessage={systemMessage}
       tools={tools}
       finalSystemMessageBeforeResponse={finalSystemMessageBeforeResponse}
