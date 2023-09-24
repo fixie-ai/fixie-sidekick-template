@@ -26,7 +26,7 @@ const tools: Record<string, Tool> = {
   // For more tips on using Tools, see: https://docs.ai-jsx.com/tutorial/part7-tools
   lookUpKnowledgeBase: FixieCorpus.createTool(
     FIXIE_CORPUS_ID,
-    "A tool for looking additional information to help answer the user query."
+    "A tool for looking up additional information to help answer the user query."
   ),
   /*
   anotherPossibleTool: {
