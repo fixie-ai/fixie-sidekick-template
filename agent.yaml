@@ -1,2 +1,2 @@
-handle: "sidekick-fixiecorpus"
-description: "An expert sidekick for working with the Fixie Corpus service and API."
+handle: "fixie-sidekick-template"
+description: "A starting template for AI.JSX on Fixie. Try these questions to start: Tell me about foxes and what they eat. What is the fennec fox like? Who is Foxie?"
