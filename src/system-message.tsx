@@ -27,7 +27,7 @@ export function YourSidekickSystemMessage() {
       user request. If the user asks anything about foxes, use the 
       lookUpKnowledgeBase function. You should display helpful or relevant photos 
       if you can.
-    </SystemMessage>      
+    </SystemMessage>
       
     /* Generic message example */
     // <SystemMessage>
@@ -56,25 +56,10 @@ export function YourSidekickSystemMessage() {
     </SystemMessage>
   );
 
-  const genUISystemMessage = (
-    <SystemMessage>
-      Respond with a `Card`. If your API call produced a 4xx error, see if you can
-      fix the request and try again. Otherwise: Give the user suggested next
-      queries, using `NextStepsButton`. Only suggest things you can actually do.
-      Here's an example of what the final outcome should look like:
-      {`
-          <NextStepsButton prompt='See more about this product' />
-          <NextStepsButton prompt='See all of the social media profiles for [TODO your company]' />
-          `}
-      When you give next steps, phrase them as things the user would say to you.
-    </SystemMessage>
-  );
-
   return (
     <>
       {baseSystemMessage}
       {secondSystemMessage}
-      {genUISystemMessage}
     </>
   );
 }

@@ -1,7 +1,7 @@
 import { Tool } from "ai-jsx/batteries/use-tools";
 import { YourSidekickSystemMessage } from "./system-message.js";
 import { FixieCorpus } from "ai-jsx/batteries/docs";
-import { Sidekick } from "ai-jsx/sidekick";
+import { Sidekick, SidekickProps } from "ai-jsx/sidekick";
 import { OpenAI } from "ai-jsx/lib/openai";
 
 //TODO: Replace with your Fixie Corpus ID
@@ -51,6 +51,9 @@ export default function SidekickTemplate() {
       <Sidekick
         systemMessage={systemMessage}
         tools={tools}
+        outputFormat="text/mdx"
+        includeNextStepsRecommendations={true}
+        useCitationCard={true}
       />
     </OpenAI>
     
