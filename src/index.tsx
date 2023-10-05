@@ -1,10 +1,8 @@
 import { Tool } from "ai-jsx/batteries/use-tools";
-import {
-  YourSidekickSystemMessage,
-  finalSystemMessageBeforeResponse,
-} from "./system-message.js";
+import { YourSidekickSystemMessage } from "./system-message.js";
 import { FixieCorpus } from "ai-jsx/batteries/docs";
 import { Sidekick } from "ai-jsx/sidekick";
+import { OpenAI } from "ai-jsx/lib/openai";
 
 //TODO: Replace with your Fixie Corpus ID
 // This Corpus contains information about foxes. Some suggested queries to try once
@@ -49,12 +47,12 @@ const tools: Record<string, Tool> = {
 
 export default function SidekickTemplate() {
   return (
-    <Sidekick
-      // TODO: Give the Sidekick a descriptive role like "A helpful assistant for Acme Company".
-      role="A helpful assistant who is an expert on foxes."
-      systemMessage={systemMessage}
-      tools={tools}
-      finalSystemMessageBeforeResponse={finalSystemMessageBeforeResponse}
-    />
+    <OpenAI chatModel="gpt-4-32k">
+      <Sidekick
+        systemMessage={systemMessage}
+        tools={tools}
+      />
+    </OpenAI>
+    
   );
 }
