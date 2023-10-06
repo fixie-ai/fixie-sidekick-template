@@ -52,8 +52,8 @@ export default function SidekickTemplate() {
         systemMessage={systemMessage}
         tools={tools}
         outputFormat="text/mdx"
-        includeNextStepsRecommendations={true}
-        useCitationCard={true}
+        includeNextStepsRecommendations
+        useCitationCard
       />
     </OpenAI>
     
