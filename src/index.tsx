@@ -21,7 +21,7 @@ const systemMessage = <YourSidekickSystemMessage />;
 const tools: Record<string, Tool> = {
   // TODO: To help the model understand when to call this tool, name the function
   // something more descriptive like 'lookUpAcmeCompanyKnowledgeBase'.
-  // For more tips on using Tools, see: https://docs.ai-jsx.com/tutorial/part7-tools
+  // For more tips on using Tools, see: https://docs.ai-jsx.com/tutorials/aijsxTutorials/part7-tools
   lookUpKnowledgeBase: FixieCorpus.createTool(
     FIXIE_CORPUS_ID,
     "A tool for looking up additional information to help answer the user query."
