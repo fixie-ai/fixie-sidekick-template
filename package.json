@@ -17,9 +17,9 @@
     "deploy": "fixie deploy"
   },
   "dependencies": {
-    "@fixieai/sdk": "^1.3.0",
-    "ai-jsx": "^0.21.2",
-    "fixie": "^1.8.0"
+    "@fixieai/sdk": "^1.6.0",
+    "ai-jsx": "^0.26.1",
+    "fixie": "^5.2.0"
   },
   "files": [
     "dist",
